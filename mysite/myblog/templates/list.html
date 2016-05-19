@@ -1,0 +1,23 @@
+<!-- TODO: extend base.html -->
+
+<!-- TODO: wrap all of this content inside a "content" block -->
+  <h1>Recent Posts</h1>
+
+  {% comment %} here is where the query happens {% endcomment %}
+  <!-- TODO: Iterate over all the posts -->
+  <div class="post">
+    <h2>
+      <a href="{% url 'blog_detail' post.pk %}">{{ post }}</a>
+    </h2>
+    <p class="byline">
+      <!-- TODO: Byline goes here (post author and date) -->
+    </p>
+    <div class="post-body">
+      <!-- TODO: Post body goes here -->
+    </div>
+    <ul class="categories">
+      <!-- TODO: Make a list item for each post category that belongs to this post -->
+      <li><!-- TODO: put category here --></li>
+    </ul>
+  </div>
+  <!-- TODO: End posts iteration -->
