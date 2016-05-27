@@ -10,6 +10,9 @@ from myblog.models import Post
 admin.site.register(Category)
 admin.site.register(Post)
 
+class CategoryAdmin(admin.ModelAdmin):
+	exclude = ('posts',)
+
 
 #class AuthorAdmin(admin.ModelAdmin):
 #	pass
